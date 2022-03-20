@@ -5,6 +5,13 @@ const toDoCont = document.getElementById("todo-container")
 
 const TODOS_KEY = "todos";
 
+var colors = ['rgb(255, 237, 255)', 'rgb(237, 237, 255)', 'rgb(255, 255, 237)', 'rgb(237, 237, 246)', 'rgb(237, 246, 255)', 'rgb(237, 255, 255)', 'rgb(246, 237, 246)', 'rgb(255, 237, 237)', 'rgb(246, 237, 237)', 'rgb(255, 246, 237)', 'rgb(255, 237, 246)', 'rgb(246, 237, 237)', 'rgb(237, 255, 246)', 'rgb(246, 237, 255)', 'rgb(237, 255, 237)', 'rgb(237, 246, 237)', 'rgb(237, 246, 246)', 'rgb(246, 246, 237)'];
+
+function setCardColor() {
+  var boxes = document.querySelectorAll(".todo-card");
+  boxes[boxes.length-1].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+}
+
 let toDos = [];
 
 function saveToDos() {
@@ -29,6 +36,7 @@ function paintToDo(newTodo) {
   button.addEventListener("click", deleteToDo);
   div.appendChild(button);
   toDoCont.appendChild(div);
+  setCardColor();
 }
 
 function handleToDoSubmit(event) {
@@ -53,3 +61,4 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
+

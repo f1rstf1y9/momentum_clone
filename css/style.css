@@ -11,25 +11,47 @@ body {
 }
 #header {
   height: 55px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(201, 201, 201);
   background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 99;
+  box-shadow: 0px 0px 10px #4444444d;
 }
 
+#header > div {
+  box-sizing: border-box;
+  width: 33.33%;
+  float: left;
+}
 #logo{
+  font-family: 'Hurricane', cursive;
+  font-size: 30px;
+  font-weight: 600;
   line-height: 55px;
   padding: 0px 30px;
-  float: left;
 }
 
 #clock {
-  line-height: 55px;
+  line-height: 60px;
   text-align: center;
-  width: 100%;
-  z-index: 1;
+  float: left;
+  width: 33.33%;
+  font-family: 'Syncopate', sans-serif;
+  color: coral;
+}
+
+#logout-btn {
+  padding: 7px 9px;
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  float: right;
+  margin: 12px;
 }
 
 #contents {
@@ -53,7 +75,7 @@ body {
 
 #login-form > button {
   position: absolute;
-  margin: 0 5px;
+  margin: 0 20px;
   padding: 7px 9px;
   background-color: coral;
   border: none;
@@ -62,12 +84,17 @@ body {
   font-weight: 700;
 }
 
-#profile > img {
+#profile img {
   width: 150px;
   height: 150px;
   border-radius: 100%;
   float: left;
-  padding: 0 100px;
+  margin: 0 80px;
+  border: 5px solid transparent;
+  border-radius: 100px;
+  background-image: linear-gradient(#444444, #444444), linear-gradient(to right, #ffb049be, #f17dd6aa, #29c2ffaa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 #quote > p {
@@ -75,7 +102,7 @@ body {
 }
 
 #weather {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 
 #weather > span {
@@ -86,7 +113,7 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin: 30px;
+  margin: 60px;
 }
 #bookmark a {
   text-decoration: none;
@@ -98,9 +125,7 @@ body {
 #bookmark img {
   width: 80px;
   height: 80px;
-  border: 1px solid rgb(211, 211, 211);
   border-radius: 100%;
-  background-color: white;
 }
 
 #bookmark p {
@@ -111,6 +136,16 @@ body {
   border-top: 1px solid rgb(216, 216, 216);
   max-width: 1000px;
   margin: auto;
+}
+
+#menu {
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid black;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 #todo-container {
@@ -135,9 +170,10 @@ body {
 }
 
 .todo-card {
+  font-family: 'Song Myung', serif;
   position: relative;
   box-sizing: border-box;
-  border: 1px solid #000;
+  box-shadow: #d1d1d1 0px 0px 5px;
   height: 280px;
   width: 280px;
   margin: 30px;
@@ -146,8 +182,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 24px;
   font-weight: 700;
-  background-color: rgb(255, 203, 183);
+  background-color: rgba(255, 127, 80, 0.192);
 }
 
 .delete-btn {

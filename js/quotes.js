@@ -40,6 +40,26 @@ const quotes = [
     quote: "Travel expands the mind and fills the gap.",
     author: "Sheda Savage",
   },
+  {
+    quote: "Who contrils the past controls the future.",
+    author: "George Orwell",
+  },
+  {
+    quote: "A friend in power is a friend lost.",
+    author: "Henry Adams",
+  },
+  {
+    quote: "The hardest work is to go idle.",
+    author: "Jewish Proverb",
+  },
+  {
+    quote: "Nothing is more despicable than respect based on fear.",
+    author: "Albert Camus",
+  },
+  {
+    quote: "Anything you'er good at contributes to happiness.",
+    author: "Bertrand Russell",
+  },
 ];
 
 const quote = document.querySelector("#quote_sen");

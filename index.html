@@ -4,12 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>EK's Momentum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Song+Myung&family=Hurricane&display=swap" rel="stylesheet">
+  <title>Nomadgram</title>
 </head>
 <body>
   <div id="header">
     <div id="logo">Nomadgram</div>
     <h2 id="clock">00:00:00</h2>
+    <div id="logout" class="hidden">
+      <button id="logout-btn">Logout</button>
+    </div>
   </div>
 
   <div id="contents">
@@ -47,25 +53,30 @@
     <div id="bookmark">
       <a href="https://nomadcoders.co/">
         <div>
-          <img src="https://nomadcoders.co/m.svg">
+          <img src="img/nomadcoder.png">
           <p>Nomad Coders</p>
         </div>
       </a>
       <a href="https://google.com/">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzC2JyZDZ_RaWf0qp11K0lcvB6b6kYNMoqtZAQ9hiPZ4cTIOB">
+        <img src="img/google.png">
         <p>Google</p>
       </a>
       <a href="https://www.naver.com/">
-        <img src="https://play-lh.googleusercontent.com/jYtnK__ibJh9emODIgTyjZdbKym1iAj4RfoVhQZcfbG-DuTSHR5moHVx9CQnqg1yoco9=w288-h288-n-rw">
+        <img src="img/naver.png">
         <p>Naver</p>
       </a>
       <a href="https://www.youtube.com/">
-        <img src="https://yt3.ggpht.com/ytc/AKedOLTSR1TnXEvlrMZVVWYHv9BRfwu9L44Iw2iZaWQ_tg=s900-c-k-c0x00ffffff-no-rj">
+        <img src="img/youtube.png">
         <p>YouTube</p>
       </a>
     </div>
-    
+
     <div id="todo">  
+      <div id="menu">
+        <svg aria-label="" class="_8-yf5 " color="#262626" fill="#262626" height="12" role="img" viewBox="0 0 24 24" width="12"><rect fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18" x="3" y="3"></rect><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="9.015" x2="9.015" y1="3" y2="21"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="14.985" x2="14.985" y1="3" y2="21"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21" x2="3" y1="9.015" y2="9.015"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21" x2="3" y1="14.985" y2="14.985"></line></svg>
+        <span>Todo List</span>
+      </div>
+
       <div id="todo-container">
         <div class="todo-card">
           <form id="todo-form">
