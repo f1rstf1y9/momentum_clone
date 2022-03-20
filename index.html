@@ -7,29 +7,75 @@
   <title>EK's Momentum</title>
 </head>
 <body>
-  <form id="login-form" class="hidden">
-    <input 
-      required
-      maxlength="15"
-      type="text" placeholder="What is your name?"/>
-    <button>Log In</button>
-  </form>
-  <h2 id="clock">00:00:00</h2>
-  <h1 id="greeting" class="hidden"></h1>
-  
-  <form id="todo-form">
-    <input type="text" placeholder="Write a To do and Press Enter" required>
-  </form>
-  <ul id="todo-list"></ul>
-  <div id="quote">
-    <span></span>
-    <span></span>
+  <div id="header">
+    <div id="logo">Nomadgram</div>
+    <h2 id="clock">00:00:00</h2>
   </div>
-  <div id="weather">
 
-    <span></span>
-    <span></span>
+  <div id="contents">
+    <div id="profile">
+      <img alt="profile image">
+      <form id="login-form" class="hidden">
+        <input 
+          required
+          maxlength="15"
+          type="text" placeholder="Write Your Name"/>
+        <button>Log In</button>
+      </form>
+      
+      <h1 id="greeting" class="hidden"></h1>
+      
+      <div id="weather">
+        <span>
+          <span>Climate</span>
+          <span id="climate"><b></b></span>
+        </span>
+        <span>
+          <span>Temperature</span>
+          <span id="temperature"><b></b></span>
+        </span>
+        <span>
+          <span>Location</span>
+          <span id="location"><b></b></span>
+        </span>
+      </div>
+    </div>
+    <div id="quote">
+      <p id="quote_name"><b></b></p>
+      <p id="quote_sen"></p>
+    </div>
+    <div id="bookmark">
+      <a href="https://nomadcoders.co/">
+        <div>
+          <img src="https://nomadcoders.co/m.svg">
+          <p>Nomad Coders</p>
+        </div>
+      </a>
+      <a href="https://google.com/">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzC2JyZDZ_RaWf0qp11K0lcvB6b6kYNMoqtZAQ9hiPZ4cTIOB">
+        <p>Google</p>
+      </a>
+      <a href="https://www.naver.com/">
+        <img src="https://play-lh.googleusercontent.com/jYtnK__ibJh9emODIgTyjZdbKym1iAj4RfoVhQZcfbG-DuTSHR5moHVx9CQnqg1yoco9=w288-h288-n-rw">
+        <p>Naver</p>
+      </a>
+      <a href="https://www.youtube.com/">
+        <img src="https://yt3.ggpht.com/ytc/AKedOLTSR1TnXEvlrMZVVWYHv9BRfwu9L44Iw2iZaWQ_tg=s900-c-k-c0x00ffffff-no-rj">
+        <p>YouTube</p>
+      </a>
+    </div>
+    
+    <div id="todo">  
+      <div id="todo-container">
+        <div class="todo-card">
+          <form id="todo-form">
+            <input type="text" placeholder="Write a To do and Press Enter" required>
+          </form>
+      </div>
+    </div>
   </div>
+  
+
   <script src="js/greetings.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/quotes.js"></script>

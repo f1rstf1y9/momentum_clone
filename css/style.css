@@ -1,3 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .hidden {
   display: none;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+#header {
+  height: 55px;
+  border-bottom: 1px solid gray;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#logo{
+  line-height: 55px;
+  padding: 0px 30px;
+  float: left;
+}
+
+#clock {
+  line-height: 55px;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+#contents {
+  padding: 50px;
+  margin: 80px auto;
+  max-width: 1000px;
+}
+
+#profile {
+  margin: auto;
+}
+
+#login-form > input {
+  position: relative;
+  width: 200px;
+  font-style: italic;
+  font-size: 26px;
+  border : none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#login-form > button {
+  position: absolute;
+  margin: 0 5px;
+  padding: 7px 9px;
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+}
+
+#profile > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  float: left;
+  padding: 0 100px;
+}
+
+#quote > p {
+  margin: 5px;
+}
+
+#weather {
+  margin: 15px 0;
+}
+
+#weather > span {
+  margin-right: 20px;
+}
+
+#bookmark {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 30px;
+}
+#bookmark a {
+  text-decoration: none;
+  color: black !important;
+  font-weight: 700;
+  font-size: 14px;
+  flex-basis: 130px;
+}
+#bookmark img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 100%;
+  background-color: white;
+}
+
+#bookmark p {
+  margin-top: 8px;
+}
+
+#todo {
+  border-top: 1px solid rgb(216, 216, 216);
+  max-width: 1000px;
+  margin: auto;
+}
+
+#todo-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.todo-card:first-child {
+  padding: 0;
+}
+
+#todo-form > input {
+  border : none;
+  width: 240px;
+  height: 100px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.todo-card {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  height: 280px;
+  width: 280px;
+  margin: 30px;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background-color: rgb(255, 203, 183);
+}
+
+.delete-btn {
+  position: absolute;
+  top:5px;
+  right:5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
 }

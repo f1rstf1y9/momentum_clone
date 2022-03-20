@@ -1,5 +1,6 @@
-const weather = document.querySelector("#weather span:first-child");
-const city = document.querySelector("#weather span:last-child");
+const climate = document.querySelector("#climate > b");
+const temperature = document.querySelector("#temperature > b");
+const city = document.querySelector("#location > b");
 const API_KEY = "8a4d9b4faf273b1024f10e9c8d2086ec";
 
 function onGeoOk(position) {
@@ -10,7 +11,8 @@ function onGeoOk(position) {
     .then((response) => response.json())
     .then((data) => {
       city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      climate.innerText = data.weather[0].main
+      temperature.innerText = `${data.main.temp}°C`
     });
 }
 function onGeoError() {
