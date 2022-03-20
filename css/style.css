@@ -10,6 +10,7 @@ body {
   background-color: rgb(245, 245, 245);
 }
 #header {
+  padding: 0 15%;
   height: 55px;
   border-bottom: 1px solid rgb(201, 201, 201);
   background-color: white;
@@ -26,12 +27,18 @@ body {
   width: 33.33%;
   float: left;
 }
-#logo{
+
+#logo {
   font-family: 'Hurricane', cursive;
   font-size: 30px;
   font-weight: 600;
   line-height: 55px;
   padding: 0px 30px;
+  color: #444444;
+}
+
+#logo b {
+  color: #ff9500;
 }
 
 #clock {
@@ -39,13 +46,14 @@ body {
   text-align: center;
   float: left;
   width: 33.33%;
+  font-size: 18px;
   font-family: 'Syncopate', sans-serif;
-  color: coral;
+  color: #ff9500;
 }
 
 #logout-btn {
   padding: 7px 9px;
-  background-color: coral;
+  background-color: #ff9500;
   border: none;
   border-radius: 5px;
   color: white;
@@ -77,14 +85,14 @@ body {
   position: absolute;
   margin: 0 20px;
   padding: 7px 9px;
-  background-color: coral;
+  background-color: #ff9500;
   border: none;
   border-radius: 5px;
   color: white;
   font-weight: 700;
 }
 
-#profile img {
+#profile > img {
   width: 150px;
   height: 150px;
   border-radius: 100%;
@@ -95,6 +103,11 @@ body {
   background-image: linear-gradient(#444444, #444444), linear-gradient(to right, #ffb049be, #f17dd6aa, #29c2ffaa);
   background-origin: border-box;
   background-clip: content-box, border-box;
+}
+
+#greeting > img {
+  margin-left: 5px;
+  margin-bottom: -4px;
 }
 
 #quote > p {
@@ -159,6 +172,7 @@ body {
 }
 
 #todo-form > input {
+  font-family: 'Song Myung', serif;
   border : none;
   width: 240px;
   height: 100px;
@@ -188,6 +202,10 @@ body {
 }
 
 .delete-btn {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #a0a0a0;
   position: absolute;
   top:5px;
   right:5px;

@@ -16,7 +16,7 @@ function onLoginSubmit(event){
 }
 
 function paintGreetings(username){
-  greeting.innerText = username;
+  greeting.innerHTML = username + '<img src="img/verified.png" width="30px">';
   greeting.classList.remove(HIDDEN_CLASSNAME);
   logoutDiv.classList.remove(HIDDEN_CLASSNAME)
 }

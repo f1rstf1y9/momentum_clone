@@ -31,7 +31,7 @@ function paintToDo(newTodo) {
   div.className = "todo-card"
   div.innerText = newTodo.text;
   const button = document.createElement("button");
-  button.innerText = "❌";
+  button.innerText = 'X';
   button.className = "delete-btn"
   button.addEventListener("click", deleteToDo);
   div.appendChild(button);
