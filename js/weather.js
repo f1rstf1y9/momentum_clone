@@ -1,7 +1,7 @@
 const climate = document.querySelector("#climate > b");
 const temperature = document.querySelector("#temperature > b");
 const city = document.querySelector("#location > b");
-const API_KEY = "8a4d9b4faf273b1024f10e9c8d2086ec";
+const API_KEY = "17ffd6de1d30f912dfac571ed7822b9a";
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
