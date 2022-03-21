@@ -41,7 +41,7 @@ const quotes = [
     author: "Sheda Savage",
   },
   {
-    quote: "Who contrils the past controls the future.",
+    quote: "Who controls the past controls the future.",
     author: "George Orwell",
   },
   {
