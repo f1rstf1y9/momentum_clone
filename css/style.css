@@ -100,7 +100,7 @@ body {
   margin: 0 80px;
   border: 5px solid transparent;
   border-radius: 100px;
-  background-image: linear-gradient(#444444, #444444), linear-gradient(to right, #ffb049be, #f17dd6aa, #29c2ffaa);
+  background-image: linear-gradient(#44444400, #44444400), linear-gradient(to right, #ffb049be, #f17dd6aa, #29c2ffaa);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
