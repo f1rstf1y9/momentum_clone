@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Song+Myung&family=Hurricane&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Song+Myung&family=Hurricane&&family=Noto+Sans+KRdisplay=swap" rel="stylesheet">
   <title>Nomadgram</title>
 </head>
 <body>
@@ -70,17 +70,43 @@
       </a>
     </div>
 
-    <div id="todo">  
+    <div id="todo">
       <div id="menu">
-        <svg aria-label="" class="_8-yf5 " color="#262626" fill="#262626" height="12" role="img" viewBox="0 0 24 24" width="12"><rect fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18" x="3" y="3"></rect><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="9.015" x2="9.015" y1="3" y2="21"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="14.985" x2="14.985" y1="3" y2="21"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21" x2="3" y1="9.015" y2="9.015"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21" x2="3" y1="14.985" y2="14.985"></line></svg>
-        <span>Todo List</span>
-      </div>
+        <div id="todo-menu" class="menu active">
+          <svg aria-label="" class="_8-yf5 " color="#262626" fill="#262626" height="12" role="img" viewBox="0 0 24 24" width="12"><rect fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18" x="3" y="3"></rect><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="9.015" x2="9.015" y1="3" y2="21"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="14.985" x2="14.985" y1="3" y2="21"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21" x2="3" y1="9.015" y2="9.015"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21" x2="3" y1="14.985" y2="14.985"></line></svg>
+          <span>Todo List</span>
+        </div>
+        <div id="music-menu" class="menu">
+          <svg aria-label="" class="_8-yf5 " color="#8e8e8e" fill="#8e8e8e" height="12" role="img" viewBox="0 0 24 24" width="12"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 22.5C6.2 22.5 1.5 17.8 1.5 12S6.2 1.5 12 1.5 22.5 6.2 22.5 12 17.8 22.5 12 22.5zm5-11.8l-6.8-3.9c-.5-.3-1-.3-1.5 0-.4.3-.7.7-.7 1.3v7.8c0 .5.3 1 .8 1.3.2.1.5.2.8.2s.5-.1.8-.2l6.8-3.9c.5-.3.8-.8.8-1.3s-.5-1-1-1.3zm-7.5 5.2V8.1l6.8 3.9-6.8 3.9z"></path></svg>
+          <span>Music Player</span>
+        </div>
+      </div>  
+      
 
       <div id="todo-container">
         <div class="todo-card">
           <form id="todo-form">
             <input type="text" placeholder="Write a To do and Press Enter" required>
           </form>
+        </div>
+      </div>
+
+      <div id="music-container" class="hidden">
+        <div class="music-card">
+          <div>AGUST D - 사람</div>
+          <img src="img/people.jpeg" alt="">
+          <audio class="sound"  src="audio/people.mp3"></audio>
+        </div>
+        <div class="music-card">
+          <div>Jungkook - still with you</div>
+          <img src="img/stillwithyou.jpeg" alt="">
+          <audio class="sound"  src="audio/stillwithyou.mp3"></audio>
+        </div>
+        <div class="music-card">
+          <div>AGUST D - so far away</div>
+          <img src="img/sofaraway.jpeg" alt="">
+          <audio class="sound"  src="audio/sofaraway.mp3"></audio>
+        </div>
       </div>
     </div>
   </div>
@@ -92,5 +118,6 @@
   <script src="js/background.js"></script>
   <script src="js/todo.js"></script>
   <script src="js/weather.js"></script>
+  <script src="js/music.js"></script>
 </body>
 </html>

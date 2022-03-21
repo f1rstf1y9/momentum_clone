@@ -3,7 +3,7 @@
   padding: 0;
 }
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 body {
@@ -154,14 +154,35 @@ body {
 #menu {
   margin: auto;
   text-align: center;
+}
+.menu {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
   padding-top: 20px;
-  border-top: 1px solid black;
+  color: #a3a3a3;
   width: 100px;
   font-size: 14px;
   font-weight: 600;
+  margin: 0 30px;
+}
+.menu svg line, .menu svg rect {
+  stroke: #a3a3a3;
 }
 
-#todo-container {
+.active {
+  border-top: 1px solid black;
+  color: black;
+}
+
+.active svg {
+  fill: black;
+}
+.active svg line, .active svg rect {
+  stroke: black;
+}
+
+#todo-container, #music-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -183,7 +204,7 @@ body {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.todo-card {
+.todo-card, .music-card {
   font-family: 'Song Myung', serif;
   position: relative;
   box-sizing: border-box;
@@ -199,6 +220,49 @@ body {
   font-size: 24px;
   font-weight: 700;
   background-color: rgba(255, 127, 80, 0.192);
+}
+
+.music-card {
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+.music-card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;;
+  color: white;
+  font-size: medium;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 280px;
+  z-index: 1;
+  background-color: rgba(1,1,1,0.5);
+  opacity: 1;
+  bottom:280px;
+  transition: 0.5s;
+}
+.music-card:hover > div {
+  transform: translateY(280px);
+}
+.music-card img {
+  position: absolute;
+  display: inline-block;
+  height: 280px;
+  width: 280px;
+}
+.playing img {
+  animation: heartbeat 1s infinite ease;
+}
+@keyframes heartbeat {
+  0% {
+      transform: scale(1.0);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1.0);
+  }
 }
 
 .delete-btn {
